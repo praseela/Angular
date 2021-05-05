@@ -1,0 +1,26 @@
+<div style="margin-top: 10px">
+  <table class="table" border="3">
+    <thead class="thead-light">
+      <th>S.No</th>
+      <th>Name</th>
+      <th>Place</th>
+      <th>Gender</th>
+      <th>Course</th>
+      <th>Duration</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let add of formdata;index as i">
+        <td>{{i+1}}</td>
+        <td>{{add.name}}</td>
+        <td>{{add.place}}</td>
+        <td>{{add.gender}}</td>
+        <td>{{add.courses}}</td>
+        <td>{{add.duration}}</td>
+        <!-- <td>
+          <button type="button" class="btn btn-secondary btn-sm" (click)="deleteTeacher(teacher.id)">Delete</button>
+        </td> -->
+      </tr>
+    </tbody>
+  </table>
+  <a routerLink="/Back">Back</a>
+</div>

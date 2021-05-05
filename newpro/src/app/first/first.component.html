@@ -1,0 +1,21 @@
+<table border="3">
+  <tr>
+      <th>s.no</th>
+    <th>name</th>
+    <th>marks</th>
+    <th>subject</th>
+  </tr>
+<tr *ngFor="let data of data; index as i;even as a" [ngStyle]="{'color':a?'red':'blue'}">
+    <td>{{i+1}}</td>
+  <td>{{data.name}}</td> 
+  <td>{{data.marks}}</td>
+  <td>{{data.subject}}</td>
+
+</tr>
+
+
+
+
+
+
+</table>

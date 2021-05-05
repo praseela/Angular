@@ -1,0 +1,11 @@
+
+
+      
+      <input type="text" name="id" [(ngModel)]="id"><br>
+
+      <input type="text" name="name"  [(ngModel)]="name"><br>
+      <input type="text" name="marks"  [(ngModel)]="marks"><br>
+      <input type="text" name="subject" [(ngModel)]="subject">
+
+      <input type="button" (click)="getdata()" value="click"/>
+      {{data|json}}
